@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul class="nav-ul">
-      <li class="nav-li" v-for="(item, index) in navData" :key="index">
+      <li class="nav-li" v-for="(item, index) in navData" :key="index" @click="jumpLink(item)">
         <Poptip placement="right" trigger="hover" :transfer="true">
           <div class="top">
             <p style="float: left;margin-right: 5px;">
@@ -22,7 +22,7 @@
           </div>
           <div class="mu" slot="content">
             <ButtonGroup vertical>
-              <Button icon="ios-send" @click="jumpLink(item)">跳转</Button>
+              <Button icon="ios-send" @click="jumpLink(item)">跳转111</Button>
               <Button icon="md-document" v-if="item.doc" @click="openDoc(item)" >使用文档</Button>
               <Button icon="md-heart" @click="addFavorite(item)"
                 >添加到我的收藏</Button
