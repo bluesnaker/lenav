@@ -1,730 +1,265 @@
 {
-  "company": {
-      "title": "公司环境地址",
-      "name": "company",
-      "icon": "ios-contacts-outline",
-      "nav": [
-          {
-              "icon": "./static/images/jenkins.png",
-              "name": "jenkins",
-              "desc": "测试环境Jenkins",
-              "link": "http://127.0.0.1:8080/",
-              "doc": "/data/docs/jenkins.md"
-          },
-          {
-              "icon": "./static/images/confluence.png",
-              "name": "Confluence",
-              "desc": "Confluence, 技术文档",
-              "link": "http://127.0.0.1:8090/",
-              "doc": "https://www.atlassian.com/software/confluence"
-          },
-          {
-              "icon": "./static/images/nexus.png",
-              "name": "nexus",
-              "desc": "nexus私服",
-              "link": "http://127.0.0.1:8081/"
-          },
-          {
-              "icon": "./static/images/gitlab.png",
-              "name": "Gitlab",
-              "desc": "gitlab 代码托管",
-              "link": "http://127.0.0.1:8880"
-          },
-          {
-              "icon": "./static/images/mysql.svg",
-              "name": "测试Sql发布平台",
-              "desc": "测试Sql发布平台",
-              "link": "http://127.0.0.1:9123/"
-          },
-          {
-              "icon": "./static/images/mysql.svg",
-              "name": "生产Sql发布平台",
-              "desc": "生产Sql发布平台",
-              "link": "http://127.0.0.1:9122/"
-          },
-          {
-              "icon": "./static/images/showdoc.png",
-              "name": "Showdoc",
-              "desc": "[内部使用]在线API文档、技术文档工具",
-              "link": "http://127.0.0.1:4999/web/#/"
-          },
-          {
-              "icon": "./static/images/showdoc.png",
-              "name": "Showdoc",
-              "desc": "[外部使用]在线API文档、技术文档工具",
-              "link": "http://127.0.0.1:5999/web/#/"
-          },
-          {
-              "icon": "./static/images/easymock.png",
-              "name": "Easymock",
-              "desc": "Mock server, 是一个可视化，并且能快速生成模拟数据的服务",
-              "link": "http://127.0.0.1:7300/login"
-          }
-      ]
-  },
-  "test": {
-    "title": "测试环境",
-    "name": "test",
-    "children": ["test1", "test2","test3"]
-  },
-  "test1": {
-      "title": "Test1环境地址",
-      "name": "test1",
-      "nav": [
-          {
-              "icon": "./static/images/confluence.png",
-              "name": "test1",
-              "desc": "Test1环境详细信息",
-              "link": "http://127.0.0.1:8090/pages/viewpage.action?pageId=6127905"
-          },
-          {
-              "icon": "./static/images/logio.png",
-              "name": "logio",
-              "desc": "查看日志的, admin/logio",
-              "link": "http://127.0.0.1:28778"
-          },
-          {
-              "icon": "./static/images/cat.ico",
-              "name": "cat",
-              "desc": "实时应用监控平台",
-              "link": "http://127.0.0.1:8080/cat/s/login"
-          },
-          {
-              "icon": "./static/images/nginx.svg",
-              "name": "app_h5",
-              "desc": "app h5",
-              "link": "http://127.0.0.1:26230"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "app_api",
-              "desc": "app后端接口",
-              "link": "http://127.0.0.1:26000"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "app_back",
-              "desc": "后台管理系统",
-              "link": "http://127.0.0.1:26010/back/"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "trade",
-              "desc": "后端交易模块",
-              "link": "http://127.0.0.1:26220"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "promotion",
-              "desc": "运营推广",
-              "link": "http://127.0.0.1:26084"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "activity_h5",
-              "desc": "APP活动页面",
-              "link": "http://127.0.0.1:26086"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "activity_api",
-              "desc": "活动后端接口",
-              "link": "http://127.0.0.1:26383"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "payment",
-              "desc": "支付中心",
-              "link": "http://127.0.0.1:28000"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "payment_gw",
-              "desc": "支付中心h5页面网关接口",
-              "link": "http://127.0.0.1:28010"
-          },
-          {
-              "icon": "./static/images/nginx.svg",
-              "name": "payment_h5",
-              "desc": "支付中心h5页面",
-              "link": "http://127.0.0.1:28020"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "payment_callback",
-              "desc": "支付中心回调系统",
-              "link": "http://127.0.0.1:28030"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "openapi",
-              "desc": "对外交互，重构用户系统对接第三方",
-              "link": "http://127.0.0.1:21040"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "sms",
-              "desc": "短信",
-              "link": "http://127.0.0.1:26030"
-          },
-          {
-              "icon": "./static/images/php.png",
-              "name": "php_api",
-              "desc": "php api接口",
-              "link": "http://127.0.0.1:26040"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_eureka",
-              "desc": "服务注册",
-              "link": "http://127.0.0.1:21000"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_apigateway",
-              "desc": "API网关(zuul)",
-              "link": "http://127.0.0.1:21010"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_mq",
-              "desc": "消息消费调度中心",
-              "link": "http://127.0.0.1:21020"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_scheduler",
-              "desc": "任务调度系统",
-              "link": "http://127.0.0.1:21030"
-          }
-      ]
-  },
-  "test2": {
-      "title": "Test2环境地址",
-      "name": "test2",
-      "nav": [
-          {
-              "icon": "./static/images/confluence.png",
-              "name": "test2",
-              "desc": "Test2环境详细信息",
-              "link": "http://127.0.0.1:8090/pages/viewpage.action?pageId=6127905"
-          },
-          {
-              "icon": "./static/images/logio.png",
-              "name": "logio",
-              "desc": "查看日志的, admin/logio",
-              "link": "http://127.0.0.1:28778"
-          },
-          {
-              "icon": "./static/images/cat.ico",
-              "name": "cat",
-              "desc": "实时应用监控平台",
-              "link": "http://127.0.0.1:8080/cat/s/login"
-          },
-          {
-              "icon": "./static/images/nginx.svg",
-              "name": "app_h5",
-              "desc": "app h5",
-              "link": "http://127.0.0.1:26230"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "app_api",
-              "desc": "app后端接口",
-              "link": "http://127.0.0.1:26000"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "app_back",
-              "desc": "后台管理系统",
-              "link": "http://127.0.0.1:26010/back/"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "trade",
-              "desc": "后端交易模块",
-              "link": "http://127.0.0.1:26220"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "promotion",
-              "desc": "运营推广",
-              "link": "http://127.0.0.1:26084"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "activity_h5",
-              "desc": "APP活动页面",
-              "link": "http://127.0.0.1:26086"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "activity_api",
-              "desc": "活动后端接口",
-              "link": "http://127.0.0.1:26383"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "payment",
-              "desc": "支付中心",
-              "link": "http://127.0.0.1:28000"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "payment_gw",
-              "desc": "支付中心h5页面网关接口",
-              "link": "http://127.0.0.1:28010"
-          },
-          {
-              "icon": "./static/images/nginx.svg",
-              "name": "payment_h5",
-              "desc": "支付中心h5页面",
-              "link": "http://127.0.0.1:28020"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "payment_callback",
-              "desc": "支付中心回调系统",
-              "link": "http://127.0.0.1:28030"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "openapi",
-              "desc": "对外交互，重构用户系统对接第三方",
-              "link": "http://127.0.0.1:21040"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "sms",
-              "desc": "短信",
-              "link": "http://127.0.0.1:26030"
-          },
-          {
-              "icon": "./static/images/php.png",
-              "name": "php_api",
-              "desc": "php api接口",
-              "link": "http://127.0.0.1:26040"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_eureka",
-              "desc": "服务注册",
-              "link": "http://127.0.0.1:21000"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_apigateway",
-              "desc": "API网关(zuul)",
-              "link": "http://127.0.0.1:21010"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_mq",
-              "desc": "消息消费调度中心",
-              "link": "http://127.0.0.1:21020"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_scheduler",
-              "desc": "任务调度系统",
-              "link": "http://127.0.0.1:21030"
-          }
-      ]
-  },
-  "test3": {
-      "title": "Test3环境地址",
-      "name": "test3",
-      "nav": [
-          {
-              "icon": "./static/images/confluence.png",
-              "name": "test3",
-              "desc": "Test3环境详细信息",
-              "link": "http://127.0.0.1:8090/pages/viewpage.action?pageId=6127905"
-          },
-          {
-              "icon": "./static/images/logio.png",
-              "name": "logio",
-              "desc": "查看日志的, admin/logio",
-              "link": "http://127.0.0.1:28778"
-          },
-          {
-              "icon": "./static/images/cat.ico",
-              "name": "cat",
-              "desc": "实时应用监控平台",
-              "link": "http://127.0.0.1:8080/cat/s/login"
-          },
-          {
-              "icon": "./static/images/nginx.svg",
-              "name": "app_h5",
-              "desc": "app h5",
-              "link": "http://127.0.0.1:26230"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "app_api",
-              "desc": "app后端接口",
-              "link": "http://127.0.0.1:26000"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "app_back",
-              "desc": "后台管理系统",
-              "link": "http://127.0.0.1:26010/back/"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "trade",
-              "desc": "后端交易模块",
-              "link": "http://127.0.0.1:26220"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "promotion",
-              "desc": "运营推广",
-              "link": "http://127.0.0.1:26084"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "activity_h5",
-              "desc": "APP活动页面",
-              "link": "http://127.0.0.1:26086"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "activity_api",
-              "desc": "活动后端接口",
-              "link": "http://127.0.0.1:26383"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "payment",
-              "desc": "支付中心",
-              "link": "http://127.0.0.1:28000"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "payment_gw",
-              "desc": "支付中心h5页面网关接口",
-              "link": "http://127.0.0.1:28010"
-          },
-          {
-              "icon": "./static/images/nginx.svg",
-              "name": "payment_h5",
-              "desc": "支付中心h5页面",
-              "link": "http://127.0.0.1:28020"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "payment_callback",
-              "desc": "支付中心回调系统",
-              "link": "http://127.0.0.1:28030"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "openapi",
-              "desc": "对外交互，重构用户系统对接第三方",
-              "link": "http://127.0.0.1:21040"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "sms",
-              "desc": "短信",
-              "link": "http://127.0.0.1:26030"
-          },
-          {
-              "icon": "./static/images/php.png",
-              "name": "php_api",
-              "desc": "php api接口",
-              "link": "http://127.0.0.1:26040"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_eureka",
-              "desc": "服务注册",
-              "link": "http://127.0.0.1:21000"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_apigateway",
-              "desc": "API网关(zuul)",
-              "link": "http://127.0.0.1:21010"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_mq",
-              "desc": "消息消费调度中心",
-              "link": "http://127.0.0.1:21020"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_scheduler",
-              "desc": "任务调度系统",
-              "link": "http://127.0.0.1:21030"
-          }
-      ]
-  },
-  "pre": {
-      "title": "Pre环境地址",
-      "name": "pre",
-      "nav": [
-          {
-              "icon": "./static/images/confluence.png",
-              "name": "pre",
-              "desc": "Pre环境详细信息",
-              "link": "http://127.0.0.1:8090/pages/viewpage.action?pageId=6127905"
-          },
-          {
-              "icon": "./static/images/logio.png",
-              "name": "logio",
-              "desc": "查看日志的, admin/logio",
-              "link": "http://127.0.0.1:28778"
-          },
-          {
-              "icon": "./static/images/cat.ico",
-              "name": "cat",
-              "desc": "实时应用监控平台",
-              "link": "http://127.0.0.1:8080/cat/s/login"
-          },
-          {
-              "icon": "./static/images/nginx.svg",
-              "name": "app_h5",
-              "desc": "app h5",
-              "link": "http://127.0.0.1:26230"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "app_api",
-              "desc": "app后端接口",
-              "link": "http://127.0.0.1:26000"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "app_back",
-              "desc": "后台管理系统",
-              "link": "http://127.0.0.1:26010/back/"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "trade",
-              "desc": "后端交易模块",
-              "link": "http://127.0.0.1:26220"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "promotion",
-              "desc": "运营推广",
-              "link": "http://127.0.0.1:26084"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "activity_h5",
-              "desc": "APP活动页面",
-              "link": "http://127.0.0.1:26086"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "activity_api",
-              "desc": "活动后端接口",
-              "link": "http://127.0.0.1:26383"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "payment",
-              "desc": "支付中心",
-              "link": "http://127.0.0.1:28000"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "payment_gw",
-              "desc": "支付中心h5页面网关接口",
-              "link": "http://127.0.0.1:28010"
-          },
-          {
-              "icon": "./static/images/nginx.svg",
-              "name": "payment_h5",
-              "desc": "支付中心h5页面",
-              "link": "http://127.0.0.1:28020"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "payment_callback",
-              "desc": "支付中心回调系统",
-              "link": "http://127.0.0.1:28030"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "openapi",
-              "desc": "对外交互，重构用户系统对接第三方",
-              "link": "http://127.0.0.1:21040"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "sms",
-              "desc": "短信",
-              "link": "http://127.0.0.1:26030"
-          },
-          {
-              "icon": "./static/images/php.png",
-              "name": "php_api",
-              "desc": "php api接口",
-              "link": "http://127.0.0.1:26040"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_eureka",
-              "desc": "服务注册",
-              "link": "http://127.0.0.1:21000"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_apigateway",
-              "desc": "API网关(zuul)",
-              "link": "http://127.0.0.1:21010"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_mq",
-              "desc": "消息消费调度中心",
-              "link": "http://127.0.0.1:21020"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_scheduler",
-              "desc": "任务调度系统",
-              "link": "http://127.0.0.1:21030"
-          }
-      ]
-  },
-  "prod": {
-      "title": "Prod环境地址",
-      "name": "prod",
-      "nav": [
-          {
-              "icon": "./static/images/confluence.png",
-              "name": "prod",
-              "desc": "Prod环境详细信息",
-              "link": "http://127.0.0.1:8090/pages/viewpage.action?pageId=6127905"
-          },
-          {
-              "icon": "./static/images/logio.png",
-              "name": "logio",
-              "desc": "查看日志的, admin/logio",
-              "link": "http://127.0.0.1:28778"
-          },
-          {
-              "icon": "./static/images/cat.ico",
-              "name": "cat",
-              "desc": "实时应用监控平台",
-              "link": "http://127.0.0.1:8080/cat/s/login"
-          },
-          {
-              "icon": "./static/images/nginx.svg",
-              "name": "app_h5",
-              "desc": "app h5",
-              "link": "http://127.0.0.1:26230"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "app_api",
-              "desc": "app后端接口",
-              "link": "http://127.0.0.1:26000"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "app_back",
-              "desc": "后台管理系统",
-              "link": "http://127.0.0.1:26010/back/"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "trade",
-              "desc": "后端交易模块",
-              "link": "http://127.0.0.1:26220"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "promotion",
-              "desc": "运营推广",
-              "link": "http://127.0.0.1:26084"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "activity_h5",
-              "desc": "APP活动页面",
-              "link": "http://127.0.0.1:26086"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "activity_api",
-              "desc": "活动后端接口",
-              "link": "http://127.0.0.1:26383"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "payment",
-              "desc": "支付中心",
-              "link": "http://127.0.0.1:28000"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "payment_gw",
-              "desc": "支付中心h5页面网关接口",
-              "link": "http://127.0.0.1:28010"
-          },
-          {
-              "icon": "./static/images/nginx.svg",
-              "name": "payment_h5",
-              "desc": "支付中心h5页面",
-              "link": "http://127.0.0.1:28020"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "payment_callback",
-              "desc": "支付中心回调系统",
-              "link": "http://127.0.0.1:28030"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "openapi",
-              "desc": "对外交互，重构用户系统对接第三方",
-              "link": "http://127.0.0.1:21040"
-          },
-          {
-              "icon": "./static/images/tomcat.png",
-              "name": "sms",
-              "desc": "短信",
-              "link": "http://127.0.0.1:26030"
-          },
-          {
-              "icon": "./static/images/php.png",
-              "name": "php_api",
-              "desc": "php api接口",
-              "link": "http://127.0.0.1:26040"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_eureka",
-              "desc": "服务注册",
-              "link": "http://127.0.0.1:21000"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_apigateway",
-              "desc": "API网关(zuul)",
-              "link": "http://127.0.0.1:21010"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_mq",
-              "desc": "消息消费调度中心",
-              "link": "http://127.0.0.1:21020"
-          },
-          {
-              "icon": "./static/images/spring.png",
-              "name": "component_scheduler",
-              "desc": "任务调度系统",
-              "link": "http://127.0.0.1:21030"
-          }
-      ]
-  }
+	"company": {
+		"title": "办公网址",
+		"name": "company",
+		"icon": "md-home",
+		"nav": [
+			{
+				"icon": "./static/images/eflow.png",
+				"name": "Agentflow Portal",
+				"desc": "Agentflow Portal",
+				"link": "http://eflow-pase.chenbro.com.tw:8080/WebAgenda/index.do"
+			},
+			{
+				"icon": "./static/images/oracle.svg",
+				"name": "Oracle ERP",
+				"desc": "Oracle ERP",
+				"link": "http://erpap.chenbro.com.tw:8000/OA_HTML/AppsLocalLogin.jsp"
+			},
+			{
+				
+				"icon": "./static/images/hrm.ico",
+  				"name": "人事系統",
+				"desc": "人事系統eHR",
+			        "link": "https://hrm.chenbro.com.tw/eHR/"
+			},
+			{
+				"icon": "./static/images/avm.jpg",
+				"name": "AVM",
+				"desc": "AVM",
+				"link": "http://172.22.81.61/"
+			},
+			{
+				"icon": "./static/images/partner.ico",
+				"name": "供應商管理平台",
+				"desc": "供應商管理平台",
+				"link": "http://172.22.81.39/"
+			},
+			{
+				"icon": "./static/images/tools.svg",
+				"name": "檢治具管理系統",
+				"desc": "檢治具管理系統",
+				"link": "http://172.22.81.60:8001/"
+			},
+			{
+				"icon": "./static/images/esop.png",
+				"name": "E-SOP",
+				"desc": "E-SOP签核管理系統",
+				"link": "http://esop-server.chenbro.com.sh/eSOP/"
+			}
+		]
+	},
+	"information-security": {
+		"title": "资讯安全",
+		"name": "information-security",
+		"icon": "md-lock",
+		"nav": [
+			{
+				"icon": "./static/images/OSSIM.ico",
+				"name": "OSSIM",
+				"desc": "AlienVault OSSIM",
+				"link": "https://172.22.81.22/ossim/session/login.php"
+			},
+			{
+				"icon": "./static/images/sangfor.ico",
+				"name": "CSH 深信服",
+				"desc": "CSH 深信服",
+				"link": "https://172.22.80.17/"
+			},
+			{
+				"icon": "./static/images/sangfor.ico",
+				"name": "CPT 深信服",
+				"desc": "CPT 深信服",
+				"link": "https://172.22.68.254/"
+			},
+			{
+				"icon": "./static/images/bacula-web.png",
+				"name": "Bacula Web",
+				"desc": "Bacula Web Report",
+				"link": "http://172.22.81.55/bacula-web/"
+			},
+			{
+				"icon": "./static/images/bacula.ico",
+				"name": "Bacula Manage",
+				"desc": "Bacula Backup Manage",
+				"link": "http://172.22.81.55:9095/web/"
+			},
+			{
+				"icon": "./static/images/cisco.svg",
+				"name": "CSH WLC",
+				"desc": "CSH WLC",
+				"link": "http://172.22.86.100/"
+			},
+			{
+				"icon": "./static/images/cisco.svg",
+				"name": "CPT WLC",
+				"desc": "CPT WLC",
+				"link": "http://172.22.68.149/"
+			},
+			{
+				"icon": "./static/images/IP.svg",
+				"name": "CSH IPAudit",
+				"desc": "CSH IPAudit",
+				"link": "http://172.22.81.50/~ipaudit/"
+			},
+			{
+				"icon": "./static/images/mysar.svg",
+				"name": "CSH MySar",
+				"desc": "CSH MySar",
+				"link": "http://172.22.81.43/mysar/"
+			},
+			{
+				"icon": "./static/images/IP.svg",
+				"name": "DGP IPAudit",
+				"desc": "DGP IPAudit",
+				"link": "http://172.22.96.8/~ipaudit/"
+			},
+			{
+				"icon": "./static/images/mysar.svg",
+				"name": "DGP MySar",
+				"desc": "DGP MySar",
+				"link": "http://172.22.96.51/mysar/"
+			}
+		]
+	},
+	"backoffice": {
+		"title": "管理工具",
+		"name": "backoffice",
+		"icon": "ios-bug-outline",
+		"nav": [
+			{
+				"icon": "./static/images/gitlab.png",
+				"name": "Gitlab",
+				"desc": "gitlab 代码托管",
+				"link": "http://172.22.81.32/"
+			},
+			{
+				"icon": "./static/images/jumpserver.png",
+				"name": "JumpServer",
+				"desc": "JumpServer堡垒机",
+				"link": "http://172.22.81.222:8080/"
+			},
+			{
+				"icon": "./static/images/phpip.png",
+				"name": "IP管理",
+				"desc": "phpipam IP address management",
+				"link": "http://172.22.81.5/index.php?page=login"
+			},
+			{
+				"icon": "./static/images/soundcloud.svg",
+				"name": "温湿度管理平台",
+				"desc": "温湿度管理云平台",
+				"link": "http://iot.0531yun.cn/"
+			},
+			{
+				"icon": "./static/images/sdwan.ico",
+				"name": "SD-WAN",
+				"desc": "VMware SD-WAN Network Orchestrator",
+				"link": "https://chtvco.twgate.net/"
+			},
+			{
+				"icon": "./static/images/DSM.ico",
+				"name": "SH-F01",
+				"desc": "上海NAS - Synology DiskStation",
+				"link": "http://172.22.68.77:5000/"
+			},
+			{
+				"icon": "./static/images/DSM.ico",
+				"name": "BJ-F01",
+				"desc": "北京NAS - Synology DiskStation",
+				"link": "https://192.168.9.9:5001/"
+			},
+			{
+				"icon": "./static/images/avaya.png",
+				"name": "Avaya Manager",
+				"desc": "Avaya IP Office Web Manager",
+				"link": "https://172.22.80.10:8443/WebMgmtEE/WebManagement.html"
+			}
+		]
+	},
+	"vm": {
+		"title": "虚拟机管理",
+		"name": "vm",
+		"icon": "md-analytics",
+		"nav": [
+			{
+				"icon": "./static/images/vm.jpg",
+				"name": "CSH vSphere",
+				"desc": "CSH vSphere",
+				"link": "https://vcsa.chenbro.com.sh/ui/"
+			},
+			{
+				"icon": "./static/images/kvm.png",
+				"name": "CSH KVM",
+				"desc": "CSH KVM - 172.22.81.10",
+				"link": "https://172.22.81.10:9090"
+			},
+			{
+				"icon": "./static/images/kvm.png",
+				"name": "CSH KVM",
+				"desc": "CSH KVM - 172.22.81.16",
+				"link": "https://172.22.81.16:9090"
+			},
+			{
+				"icon": "./static/images/kvm.png",
+				"name": "CSH KVM",
+				"desc": "CSH KVM - 172.22.81.44",
+				"link": "https://172.22.81.44:9090"
+			},
+			{
+				"icon": "./static/images/vm.jpg",
+				"name": "DGP vSphere",
+				"desc": "DGP vSphere",
+				"link": "https://vcsa.chenbro.com.tx/ui/"
+			}
+		]
+	},
+	"report": {
+		"title": "报表系统",
+		"name": "report",
+		"icon": "ios-paper",
+		"nav": [
+			{
+				"icon": "./static/images/printer.svg",
+				"name": "打印机报表",
+				"desc": "部门打印机使用报表",
+				"link": "http://172.22.81.5:82/index.php"
+			},
+			{
+				"icon": "./static/images/barcode.svg",
+				"name": "CSH 条码系统",
+				"desc": "CSH 条码系统",
+				"link": "http://192.168.8.16"
+			},
+			{
+				"icon": "./static/images/avaya.png",
+				"name": "System Status",
+				"desc": "Avaya System Status",
+				"link": "http://172.22.80.10/ssa/index.html"
+			}
+		]
+	},
+	"cctv": {
+		"title": "监控主机",
+		"name": "cctv",
+		"icon": "md-videocam",
+		"children": ["cctv-csh","cctv-dgp"]
+	},
+	"cctv-csh": {
+		"title": "CSH 监控主机",
+		"name": "cctv-csh",
+		"icon": "md-videocam",
+		"nav": [
+			
+		]
+	},
+	"cctv-dgp": {
+		"title": "DGP 监控主机",
+		"name": "cctv-dgp",
+		"icon": "md-videocam",
+		"nav": [
+			
+		]
+	}
+
 }
