@@ -55,11 +55,23 @@
 		"icon": "md-lock",
 		"nav": [
 			{
+				"icon": "./static/images/glpi.ico",
+				"name": "CSH GLPI资产管理",
+				"desc": "CSH GLPI 资产管理系统",
+				"link": "http://172.22.81.38"
+			},
+			{
 				"icon": "./static/images/OSSIM.ico",
-				"name": "OSSIM",
-				"desc": "AlienVault OSSIM",
+				"name": "CSH OSSIM",
+				"desc": "CSH AlienVault OSSIM",
 				"link": "https://172.22.81.22/ossim/session/login.php"
 			},
+			{
+                                "icon": "./static/images/OSSIM.ico",
+                                "name": "DGP OSSIM",
+                                "desc": "DGP AlienVault OSSIM",
+                                "link": "https://172.22.96.92/ossim/session/login.php"
+                        },
 			{
 				"icon": "./static/images/sangfor.ico",
 				"name": "CSH 深信服",
@@ -72,6 +84,12 @@
 				"desc": "CPT 深信服",
 				"link": "https://172.22.68.254/"
 			},
+			{
+                                "icon": "./static/images/sangfor.ico",
+                                "name": "DGP 深信服",
+                                "desc": "DGP 深信服",
+                                "link": "https://172.22.96.249/"
+                        },
 			{
 				"icon": "./static/images/bacula-web.png",
 				"name": "Bacula Web",
@@ -96,23 +114,13 @@
 				"desc": "CPT WLC",
 				"link": "http://172.22.68.149/"
 			},
-			{
-				"icon": "./static/images/IP.svg",
-				"name": "CSH IPAudit",
-				"desc": "CSH IPAudit",
-				"link": "http://172.22.81.50/~ipaudit/"
-			},
+			
+			
 			{
 				"icon": "./static/images/mysar.svg",
 				"name": "CSH MySar",
 				"desc": "CSH MySar",
 				"link": "http://172.22.81.43/mysar/"
-			},
-			{
-				"icon": "./static/images/IP.svg",
-				"name": "DGP IPAudit",
-				"desc": "DGP IPAudit",
-				"link": "http://172.22.96.8/~ipaudit/"
 			},
 			{
 				"icon": "./static/images/mysar.svg",
