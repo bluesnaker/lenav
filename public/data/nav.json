@@ -127,6 +127,12 @@
 				"name": "DGP MySar",
 				"desc": "DGP MySar",
 				"link": "http://172.22.96.51/mysar/"
+			},
+			{
+				"icon": "./static/images/mysar.svg",
+				"name": "TaiPei MySar",
+				"desc": "TaiPei MySar",
+				"link": "http://172.22.19.153/mysar/"
 			}
 		]
 	},
