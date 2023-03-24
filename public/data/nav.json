@@ -55,6 +55,24 @@
 		"icon": "md-lock",
 		"nav": [
 			{
+				"icon": "./static/images/apexone.ico",
+				"name": "CSH TrendMicro ApexOne",
+				"desc": "CSH TrendMicro ApexOne",
+				"link": "https://apexone.chenbro.com.sh:4343/officescan"
+			},
+			{
+				"icon": "./static/images/apexone.ico",
+				"name": "DGP TrendMicro ApexOne",
+				"desc": "DGP TrendMicro ApexOne",
+				"link": "https://apexonetx.chenbro.com.tx:4343/officescan"
+			},
+			{
+				"icon": "./static/images/apexone.ico",
+				"name": "TrendMicro ApexCentral ",
+				"desc": "TrendMicro ApexCentral",
+				"link": "https://172.22.81.9/webapp"
+			},
+			{
 				"icon": "./static/images/glpi.ico",
 				"name": "CSH GLPI资产管理",
 				"desc": "CSH GLPI 资产管理系统",
@@ -133,6 +151,31 @@
 				"name": "TaiPei MySar",
 				"desc": "TaiPei MySar",
 				"link": "http://172.22.19.153/mysar/"
+			}
+		]
+	},
+	"webmin": {
+		"title": "Webmin",
+		"name": "Webmin",
+		"icon": "md-medal",
+		"nav": [
+			{
+				"icon": "./static/images/webmin.png",
+				"name": "CSH Proxy Webmin",
+				"desc": "CSH Proxy Webmin",
+				"link": "https://172.22.81.43:10000/"
+			},
+			{
+				"icon": "./static/images/webmin.png",
+				"name": "DGP Proxy Webmin",
+				"desc": "DGP Proxy Webmin",
+				"link": "https://172.22.96.51:10000/"
+			},
+			{
+				"icon": "./static/images/webmin.png",
+				"name": "CBM Proxy Webmin",
+				"desc": "CBM Proxy Webmin",
+				"link": "https://172.22.19.153:10000/"
 			}
 		]
 	},
