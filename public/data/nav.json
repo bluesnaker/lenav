@@ -73,7 +73,7 @@
 				"link": "https://172.22.81.9/webapp"
 			},
 			{
-				"icon": "./static/images/Network-globe",
+				"icon": "./static/images/Network-globe.ico",
 				"name": "Apexone 防毒報表系統 ",
 				"desc": "TrendMicro Apexone 防毒報表系統",
 				"link": "https://172.22.81.9:4343/drs_plus/"
