@@ -191,6 +191,12 @@
 		"icon": "ios-bug-outline",
 		"nav": [
 			{
+				"icon": "./static/images/zabbix.ico",
+				"name": "Zabbix",
+				"desc": "Zabbix 系统监控",
+				"link": "http://172.22.81.53/zabbix/"
+			},
+			{
 				"icon": "./static/images/gitlab.png",
 				"name": "Gitlab",
 				"desc": "gitlab 代码托管",
