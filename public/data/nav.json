@@ -109,11 +109,11 @@
 				"link": "https://172.22.68.254/"
 			},
 			{
-                                "icon": "./static/images/sangfor.ico",
-                                "name": "DGP 深信服",
-                                "desc": "DGP 深信服",
-                                "link": "https://172.22.96.249/"
-                        },
+				"icon": "./static/images/sangfor.ico",
+				"name": "DGP 深信服",
+				"desc": "DGP 深信服",
+				"link": "https://172.22.96.249/"
+            },
 			{
 				"icon": "./static/images/bacula-web.png",
 				"name": "Bacula Web",
@@ -192,9 +192,15 @@
 		"nav": [
 			{
 				"icon": "./static/images/zabbix.ico",
-				"name": "Zabbix",
-				"desc": "Zabbix 系统监控",
+				"name": "CSH Zabbix",
+				"desc": "CSH Zabbix 系统监控",
 				"link": "http://172.22.81.53/zabbix/"
+			},
+			{
+				"icon": "./static/images/zabbix.ico",
+				"name": "DGP Zabbix",
+				"desc": "DGP Zabbix 系统监控",
+				"link": "http://172.22.97.240/zabbix/"
 			},
 			{
 				"icon": "./static/images/gitlab.png",
